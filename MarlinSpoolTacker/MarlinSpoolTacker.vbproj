@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C98EAA0-55BD-4DD8-980B-FAC46DC1BAB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MarlinSpoolTacker.My.MyApplication</StartupObject>
+    <RootNamespace>MarlinSpoolTacker</RootNamespace>
+    <AssemblyName>MarlinSpoolTacker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MarlinSpoolTacker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MarlinSpoolTacker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlueButton.Designer.vb">
+      <DependentUpon>BlueButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlueButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuration\Configuration.Designer.vb">
+      <DependentUpon>Configuration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Configuration.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Console\Console.Designer.vb">
+      <DependentUpon>Console.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Console\Console.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printer\3dPrinter.Designer.vb">
+      <DependentUpon>3dPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\3dPrinter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printer\Controls\3DPrinterButtons.Designer.vb">
+      <DependentUpon>3DPrinterButtons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\Controls\3DPrinterButtons.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfigClass.vb" />
+    <Compile Include="FormEditor.Designer.vb">
+      <DependentUpon>FormEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Printer\Controls\BuildPlate.Designer.vb">
+      <DependentUpon>BuildPlate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\Controls\BuildPlate.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Printer\Controls\XYButton.Designer.vb">
+      <DependentUpon>XYButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\Controls\XYButton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProgressBarColumn2.vb" />
+    <Compile Include="Spool.vb" />
+    <Compile Include="Printer\Controls\TemperatureBar.Designer.vb">
+      <DependentUpon>TemperatureBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Printer\Controls\TemperatureBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SpoolDatabase\SpoolDatabase.Designer.vb">
+      <DependentUpon>SpoolDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpoolDatabase\SpoolDatabase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\Configuration.resx">
+      <DependentUpon>Configuration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Console\Console.resx">
+      <DependentUpon>Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\3dPrinter.resx">
+      <DependentUpon>3dPrinter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\Controls\3DPrinterButtons.resx">
+      <DependentUpon>3DPrinterButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditor.resx">
+      <DependentUpon>FormEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\Controls\BuildPlate.resx">
+      <DependentUpon>BuildPlate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printer\Controls\TemperatureBar.resx">
+      <DependentUpon>TemperatureBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpoolDatabase\SpoolDatabase.resx">
+      <DependentUpon>SpoolDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ConfigClass.datasource" />
+    <None Include="My Project\DataSources\FilamentList.datasource" />
+    <None Include="My Project\DataSources\Macro.datasource" />
+    <None Include="My Project\DataSources\MacroList.datasource" />
+    <None Include="My Project\DataSources\MaterialList.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

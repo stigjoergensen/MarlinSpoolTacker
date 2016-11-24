@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MarlinSpoolTacker
+</name>
+</assembly>
+<members>
+<member name="T:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarColumn">
+	<summary>
+ A DataGridViewColumn implementation that provides a column that
+ will display a progress bar.
+ </summary>
+</member><member name="F:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarCell.STANDARD_HORIZONTAL_MARGIN">
+	<summary>
+ Standard value to use for horizontal margins
+ </summary>
+</member><member name="F:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarCell.STANDARD_VERTICAL_MARGIN">
+	<summary>
+ Standard value to use for vertical margins
+ </summary>
+</member><member name="M:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarCell.#ctor">
+	<summary>
+ Constructor sets the expected type to int
+ </summary>
+</member><member name="M:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarCell.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Object,System.Object,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewPaintParts)">
+	<summary>
+ Paints the content of the cell
+ </summary>
+</member><member name="T:MarlinSpoolTacker.CustomProgressControl.DataGridViewProgressBarCell">
+	<summary>
+ A DataGridViewCell class that is used to display a progress bar
+ within a grid cell.
+ </summary>
+</member><member name="P:MarlinSpoolTacker.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MarlinSpoolTacker.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MarlinSpoolTacker.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
